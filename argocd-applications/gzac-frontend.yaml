@@ -14,10 +14,9 @@ spec:
       valuesObject:
         ingress:
           enabled: true
-          ingressClassName: nginx
+          className: nginx
           hosts:
-            gzac.example:
-              path: /
+            - host: gzac.example              
 
   destination:    
     server: https://kubernetes.default.svc
