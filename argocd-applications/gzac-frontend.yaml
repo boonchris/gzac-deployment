@@ -11,7 +11,7 @@ spec:
     chart: charts/gzac-frontend/gzac-frontend
     targetRevision: main
     helm:
-      valueObject:
+      valuesObject:
         ingress:
           enabled: true
           ingressClassName: nginx
