@@ -8,7 +8,7 @@ spec:
 
   source:
     repoURL: https://github.com/generiekzaakafhandelcomponent/helm-charts.git
-    chart: charts/gzac-frontend/gzac-frontend
+    path: charts/gzac-frontend/gzac-frontend
     targetRevision: main
     helm:
       valuesObject:
