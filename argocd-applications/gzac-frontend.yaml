@@ -1,0 +1,30 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: gzac-backend
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/generiekzaakafhandelcomponent/helm-charts.git
+    chart: gzac-frontend
+    targetRevision: 0.1.14
+    helm:
+      valueObject:
+        ingress:
+          enabled: true
+          ingressClassName: nginx
+          hostname: gzac.example
+
+  
+  destination:    
+    server: https://kubernetes.default.svc
+    namespace: gzac-backend
+
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    automated:
+      selfHeal: true
+      prune: true
