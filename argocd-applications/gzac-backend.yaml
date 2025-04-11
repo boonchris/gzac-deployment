@@ -8,8 +8,8 @@ spec:
 
   source:
     repoURL: https://github.com/generiekzaakafhandelcomponent/helm-charts.git
-    chart: gzac-backend
-    targetRevision: 3.0.11
+    path: charts/gzac-backend/gzac-backend
+    targetRevision: main
   
   destination:    
     server: https://kubernetes.default.svc
