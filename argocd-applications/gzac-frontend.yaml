@@ -8,8 +8,8 @@ spec:
 
   source:
     repoURL: https://github.com/generiekzaakafhandelcomponent/helm-charts.git
-    chart: gzac-frontend
-    targetRevision: 0.1.14
+    chart: charts/gzac-frontend/gzac-frontend
+    targetRevision: main
     helm:
       valueObject:
         ingress:
