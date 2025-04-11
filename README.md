@@ -8,5 +8,5 @@ Zie mijn [argocd-demo repository](https://github.com/boonchris/argocd-demo) of [
 ## Deployen van GZAC
 Na het installeren en configureren van ArgoCD:
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/boonchris/argocd-demo/main/app-of-apps.yaml
+kubectl apply -f https://raw.githubusercontent.com/boonchris/gzac-deployment/main/app-of-apps.yaml
 ```
